@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9h</title>
+</head>
+<body>
+    <input type="text" class="js-textbox" onkeypress="whileTyping(event)" placeholder="Type something..">
+    <p class="result"></p>
+    <script>
+        let result = "";
+        function whileTyping(e) {
+            
+            result += e.key
+            document.querySelector('.result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

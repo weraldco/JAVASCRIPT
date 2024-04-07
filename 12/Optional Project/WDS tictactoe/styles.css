@@ -1,0 +1,52 @@
+/* *, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .9);
+}
+body{
+    margin: 0;
+}
+.board {
+    width: 100vw;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell.x::before {
+    content:'X';
+    width: calc(var(--mark-size) * .15);
+    height: var(--mark-size);
+    background-color: black; 
+} */
+
+.cell {
+    width:75px ;
+    height: 75px;
+    border: 1px solid black;
+    line-height: 75px;
+    font-size:50px;
+    cursor: pointer;
+}
+
+#cellContainter {
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    width: 225px;
+    margin:auto
+}

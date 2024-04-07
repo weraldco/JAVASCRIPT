@@ -1,0 +1,41 @@
+body {
+    font-family: Arial;
+    font-size:14px;
+    background-color: rgb(20, 20, 20);
+    color:white;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 60px;
+    border:3px solid white;
+    background-color: rgb(20, 20, 20);
+    padding-bottom:10px;
+    padding-left:10px;
+    cursor: pointer;
+    align-items: center;
+}
+.btn-rock {
+    object-fit: cover;
+    height: 70px;
+}
+.btn-newgame, .btn-autoplay {
+    border-radius: 3px;
+    height: 50px;
+    width: 120px;
+    border:none;
+    background-color: rgb(32, 80, 236);
+    padding: 15px 10px;
+    color:white;
+    font-size: 14px;
+}
+.btn-autoplay{ 
+    background-color: rgb(34, 133, 10);
+}
+
+.auto-playing{
+    background-color: rgb(212, 48, 48);
+}
+.result-img {
+    width: 50px;
+}

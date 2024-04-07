@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11o</title>
+</head>
+<body>
+    <script>
+        // const arrString = ['hello','world','search','good','search'];
+        // const word = 'search';
+
+        // function searchWord(word, arrStr) {
+        //     let indSearch = -1;
+        //     for (let i = 0; i < arrStr.length; i++) {
+        //         if (word === arrStr[i]) {
+        //             indSearch = i
+        //             break;
+        //         } 
+        //     }
+        //     return indSearch;
+        // }
+
+        // console.log(searchWord(word,arrString));
+
+        // const arrColor = ['green','red','blue','red'];
+        // console.log(searchWord('red',arrColor));
+        // console.log(searchWord('yellow',arrColor));
+
+
+
+        
+        
+
+        // function removeEgg(foods) {
+        //     return foods.filter((value, index) => foods.indexOf(value) === index);
+        // }
+
+        // console.log(removeEgg(food))
+
+        // const colors = ['red','green','blue','red'];
+        // const result = colors.filter((color)=> color !='blue');
+
+        // console.log(result);
+        // function removeDupe(data) {
+        //     return [...new Set(data)];
+        // }
+
+        
+        const food = ['egg','apple','egg','ham','egg'];
+
+        
+        function removeEgg(data) {
+            const newData = [];
+            let removeDupe = 0;
+            const copyData = data.slice()
+            const reverseData = copyData.reverse();
+            
+            for (let i = 0; i<reverseData.length; i++) {
+                if (reverseData[i] === 'egg' && removeDupe < 2){
+                    removeDupe++;
+                    continue;
+                }
+                
+                newData.push(reverseData[i]);
+            }
+            return newData.reverse();
+        }
+
+
+        console.log(removeEgg(food));
+    
+    </script>
+</body>
+</html>

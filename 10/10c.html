@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+            font-size:14px;
+        }
+
+        .btn-gaming {
+            /* width: 100px;
+            height: 50px; */
+            padding: 10px;
+            font-size:18px;
+            font-weight: bold;
+            cursor: pointer;
+            border:none;
+            background-color: rgb(204, 204, 204);
+            border-radius: 4px;
+
+        }
+        .btn-active {
+            background-color: rgb(19, 19, 19);
+            color:white;
+
+        }
+    </style>
+</head>
+<body>
+    <button class="js-button">Test</button><p></p>
+    <button onclick="checkButton('gaming')" class="js-gaming btn-gaming">Gaming</button>
+    <button onclick="checkButton('music')" class="js-music btn-gaming">Music</button>
+    <button onclick="checkButton('tech')" class="js-tech btn-gaming">Tech</button>
+    <script>
+
+        testButton =  document.querySelector('.js-button');
+        
+
+        console.log(testButton.classList.contains('js-button'));
+
+        function checkButton(btnName){
+            inactiveButton = document.querySelector(`.js-${btnName}`);
+
+            if (inactiveButton.classList.contains('btn-active')) {
+                inactiveButton.classList.remove('btn-active');
+            } else {
+                inactiveButton.classList.add('btn-active');
+            }
+        }
+    </script>
+</body>
+</html>

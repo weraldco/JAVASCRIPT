@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let product1 = {
+            name : 'basketball',
+            price : 300.00
+        };
+        let product2 = {
+            name : 'basketball',
+            price : 300.00
+        }
+
+        let product3 = {
+            name : 'volleyball',
+            price : 250.00
+        };
+        let product4 = {
+            name : 'soccerball',
+            price : 100.00
+        }
+        isSameProduct(product1,product2);
+
+        function isSameProduct(product1,product2) {
+            if (product1.price === product2.price) {
+                console.log(`This product has the same price of ${product1.price}.`);}
+            if (product1.name === product2.name) {
+                console.log(`This product is the same ${product1.name}.`);}
+            if (product1.price !== product2.price && product1.name !== product2.name){
+                console.log(`Different product.`);}
+        }
+
+
+
+        sampleString = "Good Morning";
+
+        console.log(sampleString.toLowerCase())
+
+        console.log("test".repeat(3));
+    </script>
+</body>
+</html>

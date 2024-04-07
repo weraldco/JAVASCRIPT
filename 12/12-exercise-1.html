@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 12 : Exercise</title>
+</head>
+<body>
+    <button onclick="start()" class="js-start-btn">Start</button><br>
+    <button onclick="added()" class="js-cart-btn">Add to cart</button>
+    <p class="added"></p>
+    <script>
+        // 12A
+        
+
+        // const add = function(){
+        //     console.log(2+3);
+        // };
+
+        // function runTwice(param){
+        //     param();
+        //     param();
+        // }
+           
+
+
+        //    runTwice(function() {
+        //     console.log('12b');
+        //    });
+
+        //    runTwice(add);
+        function start() {
+            startBtnElement = document.querySelector('.js-start-btn');
+
+            setTimeout(()=>{
+                if(startBtnElement.innerHTML !== 'Finished'){
+                    startBtnElement.innerHTML = 'Finished';
+                } else {
+                    startBtnElement.innerHTML = 'Start';
+                }
+                
+            }, 1000);
+            startBtnElement.innerHTML = 'Loading..';
+        }
+
+        function added() {
+            addedLabel = document.querySelector('.added');
+            addedBtnElement = document.querySelector('.js-added-btn');
+
+            setTimeout(() => {
+                addedLabel.innerHTML =""
+            }, 2000);
+            addedLabel.innerHTML = 'Added!';
+        }
+    </script>
+</body>
+</html>

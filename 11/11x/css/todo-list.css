@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial';
+    font-size:14px;   
+}
+
+.container, .todo-list-container {
+    display:grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    width: 600px;
+    /* background-color: lightblue; */
+}
+.second-section {
+    background-color: lightblue;
+}
+input, button {
+    border:0.5px solid #c2c2c2;
+    font-size:14px;
+    padding:10px 5px;
+    margin-right: 15px;
+}
+
+.due-date-txt {
+    height: 16px;}
+
+button { 
+    width: 75px;
+    transition: background-color .25s;
+    cursor: pointer;
+
+}
+
+.add-button {
+    background-color: green;
+    color:white;
+}
+
+.delete-button {
+    background-color: rgb(167, 51, 51);
+    color:white;
+}
+
+.add-button:hover,.delete-button:hover {
+    opacity: 0.9;
+}
+
+.add-button:active, .delete-button:active {
+    opacity: 0.7;
+}

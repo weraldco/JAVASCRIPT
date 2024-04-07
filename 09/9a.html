@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <button onclick="console.log(document.querySelector('button').innerHTML)">9a</button>
+    <button class="js-secondbutton" onclick="
+        console.log(document.querySelector('.js-secondbutton').innerHTML ='9b done!')">9b</button>
+    <p></p>
+    <button class="heads" onclick="checkButton('heads')">heads</button>
+    <button class="tails" onclick="checkButton('tails')">tails</button>
+    <p>You chose: <em class="result"></em></p>
+    
+
+    <p></p>
+    <input type="text" class="my-name" onkeydown="nameOnKeypress(event)"> <button onclick="textName()">Submit</button>
+    <p class="name-result"></p>
+
+
+    <script>
+        function checkButton(name){
+            let buttonElement = document.querySelector('.' + name)
+          if(buttonElement.innerHTML === 'heads') {
+            document.querySelector('.result').innerHTML = name;
+          } else {
+            document.querySelector('.result').innerHTML = name;
+          }
+        }
+
+        function nameOnKeypress(event){
+            if (event.key === 'Enter') {
+                textName()
+            }
+        }
+        function textName(){
+            let stringName = 'Your name is ' + document.querySelector('.my-name').value;
+            
+            if (document.querySelector('.my-name').value !== "") {
+                document.querySelector('.name-result').innerHTML = stringName;
+            }
+        }
+    </script>
+</html>

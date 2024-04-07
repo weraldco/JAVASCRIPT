@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Function</title>
+</head>
+<body>
+    <!-- <button onclick="" class="js-button">Click</button> -->
+    <div class="container"></div>
+
+    <script>
+        console.log([1,-1,5,-6,7,-2].filter((value) => {
+            return value >= 0
+        }));
+
+        console.log([1,-1,5,-6,7,-2].filter(value =>  value >= 0));
+        
+        
+        console.log([1,1,1,3,5].map((value,index) => {
+            return value + 10;
+        }))
+
+        console.log([1,1,1,3,5].map(value => value + 10))
+
+
+        // const arrNames = ['Werald','Goku','Luffy']
+
+        // let contentContainer = document.querySelector('.container');
+        // let html = ''
+
+
+        // for (let i = 0; i<arrNames.length; i++){
+        //     html +=`
+        //     <p>
+        //         ${arrNames[i]}
+            
+        //     <button class='js-delete-btn'>
+        //         Delete
+        //     </button></p>`
+        // }
+        // contentContainer.innerHTML = html
+
+        // document.querySelectorAll('.js-delete-btn')
+        //     .forEach((deleteBtn, index) => {
+        //         deleteBtn.addEventListener('click', ()=>{
+        //             console.log(index);
+        //         })
+        //     });
+       
+
+       
+        
+       
+        // function reverseString(params){
+        //     let output = ""
+        //     for(let i = 0;i<params.length;i++){
+        //         output += params[params.length-(i+1)];
+        //     }
+        //     return output
+        // }
+
+        
+
+        // const reverseString = function(params) {
+        //     let output = ""
+        //     for(let i = 0;i<params.length;i++){
+        //         output += params[params.length-(i+1)];
+        //     }
+        //     return output
+        // }
+        // console.log(reverseString('Werald'));
+
+        // const arrowFunction = (a,b) => {
+        //     return a + b;
+        // }
+
+        // console.log(arrowFunction(10,20));
+
+        // objStudent = [{name:"Werald", section:"4-A"},
+        //             {name:"Goku", section:"4-B"}]
+        // arrName = ['Werald','Goku','Naruto','Saido'];
+
+        // objStudent.forEach((data) => {
+        //     console.log(data.name, data.section)
+        // });
+
+        // const buttonElement = document.querySelector('.js-button');
+
+        // const eventListener = () => {
+        //     console.log('Click!')
+        // };
+
+        // // eventListener();
+        
+        // buttonElement.addEventListener('click',() => {eventListener()} );
+        // buttonElement.removeEventListener('click', eventListener);
+
+        // buttonElement.addEventListener('click', () => {console.log('Click2');});
+        // setTimeout(function(){
+        //     console.log('timeout');
+        //     console.log('timeout 2');
+        // }, 3000);
+
+        // console.log('next line');
+
+        // setInterval(function(){
+        //     console.log('interval');
+        // }, 2000);
+
+
+        // const arr = ['apple','banana','orange'];
+
+        // arr.forEach((val, ind) => {
+        //     if(val === 'banana'){
+        //         return;
+        //     }
+        //     console.log(`${ind} : ${val}`);
+        // })
+        
+
+    </script>
+</body>
+</html>

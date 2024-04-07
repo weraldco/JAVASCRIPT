@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .container{
+            width: 250px;
+            display: grid;margin:auto;
+            grid-template-columns: repeat(3, auto);
+            
+            
+        }
+        
+
+        .js-cell { 
+            border:none;
+            width: 60px;
+            height: 60px;
+            padding:10px;
+            background-color: lightblue;
+            border:1px solid white;
+            text-align: center;
+            line-height: 75px;
+            cursor: pointer;
+            color:white;
+            font-size:60px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    <script src="js/tictactoe.js"></script>
+</body>
+</html>

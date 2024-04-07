@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Flip</title>
+</head>
+<body>
+    <button onclick="
+        guess = 'tail'
+        randomNum = Math.random();
+        
+        randResult = randomNum <= 0.5 ? 'heads' : 'tail';
+        
+        finalResult = randResult === guess ? 'You win' : 'You lose';
+
+        console.log(`You choose ${guess} and the coin is ${randResult}. ${finalResult}!`);
+
+        ">Tail</button>
+    <button onclick="
+        guess = 'heads'
+        randomNum = Math.random();
+        
+        randResult = randomNum <= 0.5 ? 'heads' : 'tail';
+        
+        finalResult = randResult === guess ? 'You win' : 'You lose';
+
+        console.log(`You choose ${guess} and the coin is ${randResult}. ${finalResult}!`);
+
+        ">Head</button>
+    <script>
+        let guess, randomNum, randResult, finalResult;
+        
+    </script>
+</body>
+</html>
